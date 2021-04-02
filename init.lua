@@ -3,6 +3,7 @@ local S = minetest.get_translator and minetest.get_translator("mobs_animal")
 		
 --dofile(path .. "intllib.lua")
 mobs.intllib = S
+--n
 
 
 
