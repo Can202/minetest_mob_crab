@@ -1,4 +1,4 @@
-# minetest_mob_crab
+# Mob Crab
 Add Crabs to Minetest
 
 
