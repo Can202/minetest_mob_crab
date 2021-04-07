@@ -3,9 +3,13 @@
 
 mobs:register_mob("mob_crab:crab", {
 	type = "animal",
-	passive = true,
-	hp_min = 1,
-	hp_max = 2,
+	passive = false,
+	attack_type = "dogfight",
+	attack_npcs = false,
+	reach = 2,
+	damage = 2,
+	hp_min = 5,
+	hp_max = 10,
 	armor = 200,
 	collisionbox = {-0.2, -0.04, -0.2, 0.2, 0.5, 0.2},
 	--collisionbox = {-0.2, -0.01, -0.2, 0.2, 0.5, 0.2},
@@ -22,6 +26,7 @@ mobs:register_mob("mob_crab:crab", {
 	--},
 	walk_velocity = 3,
 	jump = false,
+	--pushable = true,
 	drops = {
 		{name = "mobs:meat_raw", chance = 2, min = 1, max = 1},
 		{name = "mobs:leather", chance = 2, min = 1, max = 1},
@@ -46,7 +51,7 @@ mobs:spawn({
 	name = "mob_crab:crab",
 	nodes = {"default:sand"},
 	min_light = 14,
-	interval = 30,
+	interval = 60,
 	chance = 9000,
 	min_height = 3,
 	max_height = 200,
